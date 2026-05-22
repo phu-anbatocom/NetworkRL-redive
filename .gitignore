@@ -1,0 +1,67 @@
+---
+
+### 2. File `.gitignore`
+
+File này sẽ giúp bạn loại bỏ các file rác, file mã máy và các file ảnh/model nặng không cần thiết khi push lên GitHub.
+
+```gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cextensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+bin/
+lib/
+include/
+setuptools*.zip
+pip-selfcheck.json
+
+# Models and Weights (Lưu ý: Không nên đẩy file .pth nặng lên Git)
+*.pth
+*.onnx
+
+# Data and Results
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.csv
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
